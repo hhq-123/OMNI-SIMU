@@ -1,0 +1,36 @@
+<!--miniprogram/pages/main/main.wxml-->
+  <view class='dist_s'>
+
+  </view>
+
+<view>
+  <swiper class = 'advertisement-swiper'
+    indicator-dots="true"
+    autoplay="true"
+    interval="3000"
+    circular="true"
+    duration="500"
+    >
+    <swiper-item wx:for="{{advertisementList}}">
+      <view class='image-container'>
+        <image src='{{item.imagePath}}' class='image-style'></image>
+      </view>
+    </swiper-item>
+  </swiper>
+
+
+  <button class='btn1' open-type='openSetting' bindtap='goTosimulation'>
+    <view>开始决策模拟</view>
+  </button>
+  <button class='btn2' open-type='openSetting' bindtap='goTorecord'>
+    <view>历史记录</view>
+  </button>
+
+    <input class="input" name="userName" placeholder="请输入用户名" 
+    bindinput="userNameInput"/>
+
+</view>
+
+ <!--https://www.jianshu.com/p/93d7104be420-->
+
+

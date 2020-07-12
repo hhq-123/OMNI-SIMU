@@ -1,0 +1,66 @@
+/* miniprogram/pages/main/main.wxss */
+.dist_s{
+  width:2400rpx;
+  height:2400rpx;
+  border-radius: 1200rpx;
+  background-color: #389cf4;
+  margin-left:-1200rpx;
+  margin-top:-2000rpx;
+  position:fixed; 
+  z-index: -1;
+}
+
+.container{
+  background-color: #eee;
+  height: 100vh;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.cc{
+  width: 375rpx;
+  height: 375rpx;
+  border-radius: 50%;
+/*  margin-left: 200rpx; */
+}
+
+.advertisement-swiper{
+  height: 500rpx;
+}
+
+.image-container{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.image-style{
+  border: 0;
+  border-radius: 30rpx;
+}
+
+.btn1 {
+  width: 40%;
+  margin-left: 65rpx;
+/*   margin-top: 600rpx; */
+  background-color: #389cf4;
+  color: #ffffff;
+  border: 0;
+  border-radius: 98rpx;
+  float:left;
+}
+
+.btn2 {
+  width: 30%;
+  margin-right: 65rpx;
+/*  margin-top: 600rpx; */
+  background-color: #389cf4;
+  color: #ffffff;
+  border: 0;
+  border-radius: 98rpx; 
+  float:right;
+}

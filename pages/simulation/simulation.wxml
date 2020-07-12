@@ -1,0 +1,11 @@
+<!--miniprogram/pages/simulation/simulation.wxml-->
+<text>miniprogram/pages/simulation/simulation.wxml</text>
+<view>
+  <text>1.平均可变成本</text>
+  <text>2.平均收入</text>
+
+    <button class='btn' open-type='openSetting' bindtap='goTosimulation'>
+    <view>下一页</view>
+   </button>
+  
+</view>

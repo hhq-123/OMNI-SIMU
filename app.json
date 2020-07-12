@@ -1,0 +1,16 @@
+{
+  "pages": [
+    "pages/main/main",
+    "pages/simulation/simulation",
+    "pages/test/test",
+    "pages/records/records"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#389cf4",
+    "navigationBarTitleText": "易企测OMNI-SUNI",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json"
+}
