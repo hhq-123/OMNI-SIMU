@@ -11,24 +11,15 @@
 }
 
 .container{
-  background-color: #eee;
-  height: 100vh;
-  
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
 }
 
-.cc{
-  width: 375rpx;
-  height: 375rpx;
-  border-radius: 50%;
-/*  margin-left: 200rpx; */
-}
-
 .advertisement-swiper{
-  height: 500rpx;
+  padding-top: 100rpx;
+  height: 550rpx;
 }
 
 .image-container{
@@ -41,6 +32,12 @@
 .image-style{
   border: 0;
   border-radius: 30rpx;
+}
+
+.btn-container{
+  display: fiex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .btn1 {
@@ -63,4 +60,45 @@
   border: 0;
   border-radius: 98rpx; 
   float:right;
+}
+
+.page_hd {
+  padding-top: 40rpx;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.simulation, .records {
+  height: 150rpx;
+  background-color: #389cf4;
+  text-align: center;
+  line-height:80rpx;
+  font-size: 35rpx;
+  font-weight:bold;
+  color: #389cf4;
+}
+
+.simulation {
+  width: 400rpx;
+  margin-left: 65rpx;
+  border-radius: 75rpx;
+}
+
+.records {
+  width: 150rpx;
+  margin-right: 65rpx;
+  border-radius: 75rpx;
+}
+
+.icon-container{
+  display: fiex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.icon-style{
+  padding-top: 25rpx;
+  height: 100rpx;
+  width: 100rpx;
 }

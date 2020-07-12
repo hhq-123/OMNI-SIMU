@@ -1,8 +1,8 @@
 {
   "pages": [
     "pages/main/main",
-    "pages/simulation/simulation",
     "pages/test/test",
+    "pages/simulation/simulation",
     "pages/records/records"
   ],
   "window": {

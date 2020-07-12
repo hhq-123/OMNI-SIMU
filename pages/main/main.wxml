@@ -4,32 +4,38 @@
   </view>
 
 <view>
-  <swiper class = 'advertisement-swiper'
-    indicator-dots="true"
-    autoplay="true"
-    interval="3000"
-    circular="true"
-    duration="500"
-    >
-    <swiper-item wx:for="{{advertisementList}}">
-      <view class='image-container'>
-        <image src='{{item.imagePath}}' class='image-style'></image>
-      </view>
-    </swiper-item>
-  </swiper>
+  <view>
+    <swiper class = 'advertisement-swiper'
+      indicator-dots="true"
+      autoplay="true"
+      interval="3000"
+      circular="true"
+      duration="500"
+      >
+      <swiper-item wx:for="{{advertisementList}}">
+        <view class='image-container'>
+          <image src='{{item.imagePath}}' class='image-style'></image>
+        </view>
+      </swiper-item>
+    </swiper>
+  </view>
 
-
-  <button class='btn1' open-type='openSetting' bindtap='goTosimulation'>
-    <view>开始决策模拟</view>
-  </button>
-  <button class='btn2' open-type='openSetting' bindtap='goTorecord'>
-    <view>历史记录</view>
-  </button>
-
-    <input class="input" name="userName" placeholder="请输入用户名" 
-    bindinput="userNameInput"/>
-
+  <view class="page_hd">
+  <navigator class="simulation" url="/pages/simulation/simulation">
+    <view class='icon-container'>
+        <image src='/images/icons/play.png' class='icon-style'></image>
+    </view>
+    <text>开始决策模拟</text>
+  </navigator>
+  <navigator class="records" url="/pages/records/records">
+    <view class='icon-container'>
+        <image src='/images/icons/records.png' class='icon-style'></image>
+    </view>
+    <text>历史记录</text>
+  </navigator>
 </view>
+</view>
+
 
  <!--https://www.jianshu.com/p/93d7104be420-->
 

@@ -7,18 +7,33 @@ Page({
   data: {
     advertisementList:[
       {
-        imagePath: "/images/sleepy_mountains_light_v01.png",
+        imagePath: "/images/1.jpg",
       },
       {
-        imagePath: "/images/sleepy_mountains_light_v02.png",
+        imagePath: "/images/2.png",
       },
       {
-        imagePath: "/images/sleepy_mountains_light_v03.png",
-      },
-      {
-        imagePath: "/images/sleepy_mountains_light_v0.png",
-      },
-    ]
+        imagePath: "/images/3.jpg",
+      }
+    ],
+
+    option1: [{
+      value: '资产'
+    },
+    {
+      value: '支付'
+    }
+  ],
+    option2: [{
+        value: '全部'
+     },
+     {
+       value: '未发布'
+     },
+     {
+       value: '已发布'
+     }
+  ],
   },
 
   /**
@@ -87,5 +102,13 @@ Page({
     wx.navigateTo({
       url: '/pages/simulation/simulation',      
     })
+  },
+
+  tab_button_select1: function(event) {
+    console.log(event.detail)
+  },
+
+  tab_button_select2: function(event) {
+    console.log(event.detail)
   },
 })

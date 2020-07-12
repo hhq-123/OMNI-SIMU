@@ -1,0 +1,6 @@
+<!--components/tab_button/tab-button.wxml-->
+<view class="tab_button" style="height:{{h}}px;line-height:{{h}}px;display:{{display}};margin-left:{{margin_left}}px;">
+  <ul>
+    <li wx:for='{{options}}' wx:key='this' wx:for-index='index' wx:for-item='item' bindtap="tab_button_select" data-id='{{index}}' class='{{index == tab_button_active ? "tab_button_active" : "tab_button_normal"}}' style="margin-right: {{margin_right}}px;width:{{w}}px">{{item.value}}</li>
+  </ul>
+</view>

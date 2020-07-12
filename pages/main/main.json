@@ -1,4 +1,6 @@
 {
   "usingComponents": {
+    "query": "/components/query/query",
+    "tab-button": "/components/tab-button/tab-button"
   }
 }
