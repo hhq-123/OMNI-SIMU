@@ -3,38 +3,51 @@
 
   </view>
 
-<view>
   <view>
-    <swiper class = 'advertisement-swiper'
-      indicator-dots="true"
-      autoplay="true"
-      interval="3000"
-      circular="true"
-      duration="500"
-      >
-      <swiper-item wx:for="{{advertisementList}}">
-        <view class='image-container'>
-          <image src='{{item.imagePath}}' class='image-style'></image>
+    <view>
+      <swiper class = 'advertisement-swiper'
+        indicator-dots="true"
+        autoplay="true"
+        interval="3000"
+        circular="true"
+        duration="500"
+        >
+        <swiper-item wx:for="{{advertisementList}}">
+          <view class='image-container'>
+            <image src='{{item.imagePath}}' class='image-style'></image>
+          </view>
+        </swiper-item>
+      </swiper>
+    </view>
+
+    <view class="page_hd">
+      <navigator class="simulation" url="/pages/simulation/simulation">
+        <view class='icon-container'>
+            <image src='/images/icons/play.png' class='icon-style'></image>
         </view>
-      </swiper-item>
-    </swiper>
+        <text>开始决策模拟</text>
+      </navigator>
+      <navigator class="records" url="/pages/records/records">
+        <view class='icon-container'>
+            <image src='/images/icons/records.png' class='icon-style'></image>
+        </view>
+        <text>历史记录</text>
+      </navigator>
+    </view>
+
+    <view class='searchBox'>
+      <text> 政策查找</text>
+      <view class='searchBoxBar'>
+        <image src='/images/icons/search.png' class='icon-ministyle' bindtap="search"></image>
+        <input id='search' placeholder='' placeholder-class='plas' class='inputs' type='text' bindinput='searchInput'></input>
+      </view>
+    </view>
+
+    <navigator url="/pages/login/login">登录点我</navigator>
+    <navigator url="/pages/enroll/enroll">注册点我</navigator>
   </view>
 
-  <view class="page_hd">
-  <navigator class="simulation" url="/pages/simulation/simulation">
-    <view class='icon-container'>
-        <image src='/images/icons/play.png' class='icon-style'></image>
-    </view>
-    <text>开始决策模拟</text>
-  </navigator>
-  <navigator class="records" url="/pages/records/records">
-    <view class='icon-container'>
-        <image src='/images/icons/records.png' class='icon-style'></image>
-    </view>
-    <text>历史记录</text>
-  </navigator>
-</view>
-</view>
+
 
 
  <!--https://www.jianshu.com/p/93d7104be420-->

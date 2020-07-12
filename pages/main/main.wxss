@@ -102,3 +102,58 @@
   height: 100rpx;
   width: 100rpx;
 }
+
+.searchBox{
+  width: 76%;
+  height: 180rpx;
+  line-height: 100rpx;
+
+  margin: auto;
+  margin-top: 200rpx;
+  margin-left: 8%;
+  margin-right: 8%;
+
+  padding-left: 8%;
+
+  background-color: #389cf4;
+
+  border-radius: 0 40rpx 0 0;
+
+  text-align: left;
+  color: white;
+  font-size: 33rpx;
+}
+
+.searchBoxBar{
+  width: 90%;
+  height: 60rpx;
+  margin-top: 5rpx;
+  margin-left: 0rpx;
+  margin-right: 10%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: #F2F2F2;
+}
+
+.icon-ministyle{
+  margin-top: 5rpx;
+  margin-left: 5rpx;
+  height: 50rpx;
+  width: 50rpx;
+}
+
+.plas{
+  font-size: 30rpx;
+  color: #cccccc;
+}
+
+.inputs{
+  line-height: 100rpx;
+  font-size: 30rpx;
+  color: #000000;
+  margin: auto;
+  margin-left: 20rpx;
+  width: 100%;
+}

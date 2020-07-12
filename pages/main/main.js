@@ -16,26 +16,26 @@ Page({
         imagePath: "/images/3.jpg",
       }
     ],
-
-    option1: [{
-      value: '资产'
-    },
-    {
-      value: '支付'
-    }
-  ],
-    option2: [{
-        value: '全部'
-     },
-     {
-       value: '未发布'
-     },
-     {
-       value: '已发布'
-     }
-  ],
+    searchword:"",
   },
 
+
+  searchInput:function(e){
+    this.data.searchword=e.detail.value
+    console.log(this.data.searchword)
+  },
+
+  search:function(e){
+    var that=this
+    if(this.data.searchword !=''){
+      wx.showModal({
+        title: '提示',
+        content: '功能待开发，敬请期待',
+        showCancel: false,
+        success(res){}
+      })
+    }
+  },
   /**
    * 生命周期函数--监听页面加载
    */
