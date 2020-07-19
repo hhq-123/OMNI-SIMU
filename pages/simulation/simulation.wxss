@@ -1,4 +1,13 @@
 /* miniprogram/pages/simulation/simulation.wxss */
+.background{
+  left: 0px;
+  top: 0px;
+  width: 411px;
+  height: 896px;
+  background-color: rgba(255, 255, 255, 1);
+}
+
+
 .btn{
   /*   margin-top: 600rpx; */
   width: 80%;

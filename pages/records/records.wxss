@@ -1,1 +1,63 @@
 /* miniprogram/pages/records.wxss */
+
+.background{
+  left: 0px;
+  top: 0px;
+  width: 411px;
+  height: 896px;
+  background-color: rgba(240, 240, 240, 1);
+}
+
+.record-box{
+  left: 0px;
+  top: 199px;
+  width: 411px;
+  height: 93px;
+  line-height: 20px;
+  background-color: rgba(255, 255, 255, 1);
+  color: rgba(16, 16, 16, 1);
+  font-size: 14px;
+  text-align: center;
+  box-shadow: 0px 2px 6px 0px rgba(182, 185, 187, 1);
+}
+
+.text-time{
+  left: 24px;
+  top: 119px;
+  width: 331px;
+  height: 23px;
+  color: rgba(34, 34, 34, 1);
+  font-size: 16px;
+  text-align: left;
+  font-family: PingFangSC-regular;
+}
+
+.text-remarks{
+  left: 24px;
+top: 154px;
+width: 312px;
+height: 47px;
+color: rgba(153, 153, 153, 1);
+font-size: 13px;
+text-align: left;
+font-family: PingFangSC-regular;
+}
+
+.md-bookmark{
+  left: 355px;
+  top: 93px;
+  width: 37px;
+  height: 37px;
+  background-color: rgba(42, 151, 253, 1);
+}
+
+.NoMoreInformation{
+  left: 148px;
+  top: 321px;
+  width: 108px;
+  height: 27px;
+  color: rgba(0, 0, 0, 1);
+  font-size: 18px;
+  text-align: center;
+  font-family: SourceHanSansSC-regular;
+}

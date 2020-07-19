@@ -1,2 +1,11 @@
 <!--miniprogram/pages/records.wxml-->
-<text>miniprogram/pages/records.wxml</text>
+<view class='background'>
+
+  <view class='record-box'>
+    <text class='text-time'>日期：2020.7.10  时间：16：15</text>
+    <text class='text-remarks'>日期：2020.7.10  时间：16：15</text>
+  </view>
+  <text class = 'NoMoreInformation'> 没有更多记录 </text>
+</view>
+
+
