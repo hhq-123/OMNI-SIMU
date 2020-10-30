@@ -1,17 +1,18 @@
 {
   "pages": [
-    "pages/main/main",
     "pages/test/test",
+    "pages/login/login",
+    "pages/new_main/new_main",
+    "pages/main/main",
     "pages/simulation/simulation",
     "pages/records/records",
-    "pages/login/login",
     "pages/enroll/enroll"
   ],
   "window": {
     "backgroundColor": "#F6F6F6",
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#389cf4",
-    "navigationBarTitleText": "易企测OMNI-SIMU",
+    "navigationBarTitleText": "易企策OMNI-SIMU",
     "navigationBarTextStyle": "black"
   },
   "sitemapLocation": "sitemap.json"

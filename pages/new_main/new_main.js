@@ -6,7 +6,7 @@ Page({
    */
   data: {
     scrollindex:0, //当前页面的索引值
-    totalnum:2, //总共页面数
+    totalnum:5, //总共页面数
     starty:0, //开始的位置x
     endy:0, //结束的位置y
     critical: 100, //触发翻页的临界值
@@ -18,42 +18,8 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    var that = this
-        //调用微信登录接口
-        wx.login({
-            success: function () {
-                wx.getUserInfo({
-                    success: function (res) {
-                        console.log(res)
-                        app.globalData.userInfo = res.userInfo
-                        that.setData({
-                            canIUse: false
-                        })
-                        wx.switchTab({
-                            url: '../index/index'
-                        })
-                    },
-                    fail: function (res) {
-                        that.setData({
-                            canIUse: true
-                        })
-                    }
-                })
-            }
-        })
-
+    
   },
-
-  bindGetUserInfo: function (e) {
-    console.log(e)
-    app.globalData.userInfo = e.detail.userInfo
-    this.setData({
-        canIUse: false
-    })
-    wx.switchTab({
-        url: '../index/index'
-    })
-},
 
   /**
    * 生命周期函数--监听页面初次渲染完成
@@ -112,7 +78,6 @@ Page({
    scrollTouchmove:function(e){
     let py = e.touches[0].pageY;
     let d = this.data;
-
     this.setData({
      endy: py,
     })

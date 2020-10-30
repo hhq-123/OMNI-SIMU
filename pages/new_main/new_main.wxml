@@ -2,15 +2,8 @@
 <view class="container-fill">
   <view class="scroll-fullpage" bindtouchstart="scrollTouchstart" bindtouchmove="scrollTouchmove" bindtouchend="scrollTouchend" style="transform:translateY(-{{scrollindex*100}}%);margin-top: {{margintop}}px">
     <view class="section section01 {{scrollindex==0?'active':''}}" style="background: #3399FF;">
-      <view class='imagesize'>
-        <image src="/images/logo.png" class='in-image'   >
-        </image>
-      </view>
-      <button wx:if="{{canIUse}}" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">授权登录</button>
-      <navigator class="login_btn" url="/pages/records/records">
-        <text>授权登录</text>
-      </navigator>
-
+      <text class="section-maintitle">页面1</text>
+      <text class="section-subtitle">我的页面”1</text>
     </view>
     <view class="section section02 {{scrollindex==1?'active':''}}" style="background: #00CC66;">
       <text class="section-maintitle">页面2</text>

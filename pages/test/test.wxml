@@ -2,4 +2,7 @@
 
 <view class="mid"></view>
 
+
+
 <tab-button bindtab_button_select="tab_button_select2" w="50" h="30" options="{{option2}}"></tab-button>
+<button open-type="login" bindgetuserinfo="bindGetUserInfo">授权登录</button>

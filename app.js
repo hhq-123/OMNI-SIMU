@@ -15,6 +15,10 @@ App({
       })
     }
 
-    this.globalData = {}
+    this.globalData = {
+      user: {},
+      userInfo: {},
+      server:'http://localhost/treehole'
+    }
   }
 })

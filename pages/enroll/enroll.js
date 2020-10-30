@@ -78,6 +78,24 @@ Page({
     }
     else{
       console.log("success")
+      wx.request({
+        url: getApp().globalData.server + '/index.php/Home/User/sign',
+        data: {
+          username: that.data.username,
+          phone: that.data.phone,
+          password: that.data.password,
+          password_again: that.data.passwordack,
+          face_url: getApp().globalData.userInfo.avatarUrl,
+        },
+        header: {
+          'content-type': 'application/x-www-form-urlencoded'
+        },
+        success(res){
+          console.log(res.data)
+        }
+      }
+
+      )
     }
   },
 
